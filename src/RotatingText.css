@@ -1,0 +1,58 @@
+.rotating-text-container {
+  display: inline-block;
+  position: relative;
+  min-height: 1.2em;
+  color: #4fd1c7;
+  font-weight: 700;
+}
+
+.rotating-text {
+  display: inline-block;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  background: linear-gradient(45deg, #4fd1c7, #12d8fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rotating-text.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.rotating-text.hidden {
+  opacity: 0;
+  transform: translateY(-30px) scale(0.95);
+}
+
+/* Alternative sliding animation */
+.rotating-text-slide {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rotating-text-slide.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rotating-text-slide.hidden {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Alternative rotation animation */
+.rotating-text-rotate {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.rotating-text-rotate.visible {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.rotating-text-rotate.hidden {
+  opacity: 0;
+  transform: rotateX(90deg);
+} 
