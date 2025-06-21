@@ -16,7 +16,7 @@ body {
 .App {
   width: 100vw;
   height: 100vh;
-  background-color: #0c1821;
+  background-color: #070010;
   color: white;
   overflow: hidden;
 }
@@ -72,6 +72,23 @@ body {
   }
   to {
     opacity: 0.8;
+  }
+}
+
+/* React Rotating Text Cursor Animation */
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
