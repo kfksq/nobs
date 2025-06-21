@@ -3,7 +3,7 @@ import RotatingText from './RotatingText';
 import './App.css';
 
 function App() {
-  const words = ['solutions', 'apps', 'websites', 'AI agents', 'AI automations'];
+  const words = ['solutions', 'apps', 'websites', 'agents', 'automations'];
 
   return (
     <div className="App">
