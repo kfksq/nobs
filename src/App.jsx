@@ -3,17 +3,17 @@ import RotatingText from './RotatingText';
 import './App.css';
 
 function App() {
-  const words = ['Innovative', 'Creative', 'Professional', 'Strategic', 'Dynamic'];
+  const words = ['Solutions', 'Apps', 'Websites', 'AI Agents'];
 
   return (
     <div className="App">
       <div className="landing-container">
         <div className="content">
           <h1 className="main-title">
-            We are <RotatingText words={words} interval={2500} />
+            nobs.<RotatingText words={words} interval={2500} />
           </h1>
           <p className="subtitle">
-            Building exceptional digital experiences
+            coming soon
           </p>
         </div>
       </div>
