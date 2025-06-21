@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactRotatingText from 'react-rotating-text';
+import RotatingText from './RotatingText';
 import './App.css';
 
 function App() {
@@ -10,14 +10,17 @@ function App() {
       <div className="landing-container">
         <div className="content">
           <h1 className="main-title">
-            nobs.<ReactRotatingText 
-              items={words} 
-              pause={2000}
-              emptyPause={500}
-              typingInterval={100}
-              deletingInterval={50}
-              color="#4fd1c7"
-              cursor={true}
+            nobs.<RotatingText
+              texts={words}
+              mainClassName="text-teal-color"
+              staggerFrom="last"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
             />
           </h1>
           <p className="subtitle">

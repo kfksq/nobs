@@ -92,6 +92,12 @@ body {
   }
 }
 
+/* ReactBits Rotating Text Styling */
+.text-teal-color {
+  color: #4fd1c7;
+  font-weight: inherit;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .content {

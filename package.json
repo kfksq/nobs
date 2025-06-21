@@ -4,7 +4,7 @@
   "description": "Rotating text animation implementation",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,9 +13,9 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "framer-motion": "^12.18.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-rotating-text": "^1.4.1",
     "react-scripts": "^5.0.1"
   },
   "browserslist": {
