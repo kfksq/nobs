@@ -10,17 +10,20 @@ function App() {
       <div className="landing-container">
         <div className="content">
           <h1 className="main-title">
-            nobs.<RotatingText
+            nobs.
+            <RotatingText
               texts={words}
-              mainClassName="text-teal-color"
+              mainClassName="text-teal-color inline-animation"
               staggerFrom="last"
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
+              initial={{ y: "100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-120%", opacity: 0 }}
               staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden"
+              splitLevelClassName="overflow-hidden inline-block"
+              elementLevelClassName="inline-block"
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
               rotationInterval={2000}
+              splitBy="characters"
             />
           </h1>
           <p className="subtitle">
